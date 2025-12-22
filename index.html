@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YITH Geriatrics Rehab & Well-being Services</title>
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/country-state-city@1.0.7/dist/country-state-city.min.js"></script>
+
+    <!-- Placeholder for external CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container header-wrapper">
+        <!-- LOGO + SUBTITLE -->
+        <div class="logo logo-block">
+          <img
+            src="./images/5929309271503867727-removebg-preview.png"
+            alt="YITH Logo"
+            class="logo-img"
+          />
+        </div>
+
+        <!-- NAVIGATION -->
+        <nav class="nav">
+          <ul>
+            <li>
+              <a href="#home"><i class="bi bi-house-door"></i> Home</a>
+            </li>
+            <li>
+              <a href="#about"><i class="bi bi-info-circle"></i> About</a>
+            </li>
+            <li>
+              <a href="#services"><i class="bi bi-layers"></i> Services</a>
+            </li>
+            <li>
+              <a href="#testimonials"
+                ><i class="bi bi-chat-quote"></i> Testimonials</a
+              >
+            </li>
+            <li>
+              <a href="#events"><i class="bi bi-calendar-event"></i> Events</a>
+            </li>
+            <li>
+              <a href="#contact"><i class="bi bi-telephone"></i> Contact</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- CTA BUTTON -->
+        <a href="#booking" class="no btn-primary header-btn">
+          <i class="bi bi-calendar-check"></i> Schedule a Visit
+        </a>
+
+        <!-- MOBILE MENU BUTTON -->
+        <div class="menu-toggle">
+          <i class="bi bi-list"></i>
+        </div>
+      </div>
+    </header>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section id="home" class="hero">
+      <div class="hero-overlay"></div>
+      <div class="floating-shapes">
+        <div class="shape shape1"></div>
+        <div class="shape shape2"></div>
+        <div class="shape shape3"></div>
+      </div>
+
+      <div class="container">
+        <h1>
+          <i class="bi bi-heart-pulse-fill"></i> Restoring Movement.<br />
+          Renewing Life.
+        </h1>
+        <p>
+          <i class="bi bi-person-walking"></i> Compassionate geriatric rehab and
+          well-being services that help older adults move freely, live
+          pain-free, and rediscover independence.
+        </p>
+        <a href="#bookingForm" class="btn btn-primary">
+          <i class="bi bi-calendar-check"></i> Schedule a Free Consultation
+        </a>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section id="about" class="about">
+      <div class="container">
+        <h2>Who We Are</h2>
+        <p>
+          At <strong>YITH – Youth in the Heart</strong> – we specialize in
+          physical and occupational therapy for seniors. Our mission is to
+          restore mobility, reduce pain, and renew vitality through
+          personalized, heart-centered care.
+        </p>
+        <p>
+          Whether recovering from surgery, managing arthritis, or simply seeking
+          to stay active, our clients receive evidence-based treatment in a
+          warm, welcoming environment.
+        </p>
+      </div>
+      <a href="#mission-vision" class="btn btn-primary">Mission</a>
+    </section>
+
+    <!-- DELIVERY OF SERVICE -->
+    <section class="delivery">
+      <div class="container">
+        <h2>How We Deliver Care</h2>
+
+        <div class="delivery-grid">
+          <div class="delivery-item">
+            <i class="bi bi-house-heart"></i>
+            <h3>Home Visits</h3>
+            <p>Physical therapy services delivered directly to your home.</p>
+            <a href="#booking" class="btn btn-primary">Book Now</a>
+          </div>
+
+          <div class="delivery-item">
+            <i class="bi bi-laptop"></i>
+            <h3>Virtual / Tele-Visits</h3>
+            <p>Convenient online consultations and continuous monitoring.</p>
+            <a href="#booking" class="btn btn-primary">Book Now</a>
+          </div>
+
+          <div class="delivery-item coming-soon">
+            <i class="bi bi-hospital"></i>
+            <h3>In-Clinic Care</h3>
+            <p>Our physical clinic launches soon. Stay tuned!</p>
+            <span class="tag">Coming Soon</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MAIN SERVICES -->
+    <section class="services">
+      <div class="container">
+        <h2 class="title">Our Services</h2>
+
+        <div class="accordion">
+          <!-- Physical & Occupational Therapy -->
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <i class="bi bi-person-walking"></i>
+              Physical & Occupational Therapy
+            </button>
+            <div class="accordion-content">
+              <ul>
+                <li>Evidence-based practice</li>
+                <li>Patient-centered and specific programs</li>
+                <li>
+                  Post-surgical rehabilitation:
+                  <br />– Knee, hip & shoulder replacements <br />– ORIF <br />–
+                  Hemi arthroplasties
+                </li>
+                <li>Cardiac & pulmonary rehab</li>
+                <li>Gait rehab for old strokes & neurological conditions</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Strength & Conditioning -->
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <i class="bi bi-bar-chart-line-fill"></i>
+              Strength & Conditioning
+            </button>
+            <div class="accordion-content">
+              <ul>
+                <li>Private, structured, and specialized workouts</li>
+                <li>Task-specific return-to-function planning</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Lymphedema Management -->
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <i class="bi bi-droplet-half"></i>
+              Lymphedema Management
+            </button>
+            <div class="accordion-content">
+              <ul>
+                <li>Assessment, compression & long-term management</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Home Assessment -->
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <i class="bi bi-house-check"></i>
+              Home Assessment & Community Integration
+            </button>
+            <div class="accordion-content">
+              <ul>
+                <li>Fall-risk home evaluation</li>
+                <li>Mobility planning</li>
+                <li>Community reintegration support</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Community Outreach -->
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <i class="bi bi-people"></i>
+              Community Outreach
+            </button>
+            <div class="accordion-content">
+              <ul>
+                <li>Health & wellness clinic</li>
+                <li>Seminars & educational workshops</li>
+                <li>PT/OT clinical residency programs</li>
+                <li>Healthcare continuing education</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="mission-vision" class="mission-vision">
+      <div class="container">
+        <!-- MISSION -->
+        <div class="mv-block">
+          <h2>Our Mission</h2>
+          <p class="mv-text">
+            We empower older adults to live with strength, dignity, and
+            independence by delivering compassionate, evidence-based care
+            through physical therapy, home visits, virtual visits, and in-clinic
+            services. We assess, improve, and manage mobility, acute and chronic
+            conditions, and create personalized environmental modifications that
+            support safety and fall prevention. Through strong social
+            connections and holistic support, we help every individual maintain
+            independence and enhance their quality of life— wherever they call
+            home.
+          </p>
+        </div>
+
+        <!-- VISION -->
+        <div class="mv-block vision">
+          <h2>Our Vision</h2>
+          <p class="mv-text">
+            To become Oklahoma City’s most trusted, heart-centered destination
+            for geriatric rehabilitation and well-being—where older adults
+            experience compassionate care, meaningful social connection, and
+            personalized support that empowers them to live independently,
+            safely, and joyfully at every stage of aging.
+          </p>
+        </div>
+
+        <!-- CORE VALUES -->
+        <div class="mv-block values">
+          <h2>Our Core Values</h2>
+
+          <div class="values-grid">
+            <div class="value-card">
+              <h3>Compassion</h3>
+              <p>
+                We honor every individual with empathy, patience, and respect.
+              </p>
+            </div>
+
+            <div class="value-card">
+              <h3>Dignity</h3>
+              <p>
+                We protect independence and celebrate the unique story of every
+                older adult.
+              </p>
+            </div>
+
+            <div class="value-card">
+              <h3>Excellence</h3>
+              <p>
+                We deliver evidence-based physical therapy and holistic care
+                across home visits, virtual visits, and in-clinic services.
+              </p>
+            </div>
+
+            <div class="value-card">
+              <h3>Safety</h3>
+              <p>
+                We prioritize fall prevention, environmental modifications, and
+                proactive management of acute and chronic conditions.
+              </p>
+            </div>
+
+            <div class="value-card">
+              <h3>Connection</h3>
+              <p>
+                We strengthen social bonds and emotional well-being through
+                meaningful engagement and supportive relationships.
+              </p>
+            </div>
+
+            <div class="value-card">
+              <h3>Empowerment</h3>
+              <p>
+                We help older adults maintain mobility, confidence, and quality
+                of life—wherever they call home.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS SECTION ===== -->
+    <section id="testimonials" class="testimonials">
+      <div class="container">
+        <h2>Client Testimonials</h2>
+
+        <div class="testimonial-carousel">
+          <blockquote>
+            “I never thought I’d walk without pain again. YITH changed my life.”
+            <br /><span>- Mrs. Thompson</span>
+          </blockquote>
+          <blockquote>
+            “YITH gave me my life back.” <br /><span>- Mr. Adewale</span>
+          </blockquote>
+        </div>
+
+        <a href="#testimonials" class="btn btn-warning">Read More Stories</a>
+      </div>
+    </section>
+
+    <!-- ===== EVENT SECTION ===== -->
+    <!-- <section id="events" class="events">
+      <div class="container">
+        <h2>Upcoming Event</h2>
+        <p><strong>Open House & Wellness Day</strong></p>
+        <p>Saturday, October 12 | 10 AM – 2 PM</p>
+        <p>[Insert Address]</p>
+        <p>
+          Free screenings, meet our therapists, refreshments, and giveaways!
+        </p>
+        <a href="#contact" class="btn btn-orange">RSVP Now</a>
+      </div>
+    </section> -->
+
+    <!-- ============ BOOKING SECTION ============ -->
+    <form
+      id="bookingForm"
+      action="https://formspree.io/f/xlgrpzvr"
+      method="POST"
+      class="booking-form"
+    >
+      <div class="form-group">
+        <input type="text" name="first_name" required />
+        <label>First Name</label>
+      </div>
+
+      <div class="form-group">
+        <input type="text" name="last_name" required />
+        <label>Last Name</label>
+      </div>
+
+      <div class="form-group">
+        <input type="email" name="email" required />
+        <label>Email</label>
+      </div>
+
+      <div class="form-group">
+        <input type="tel" name="phone" required />
+        <label>Phone Number</label>
+      </div>
+
+      <div class="form-group">
+        <input type="text" name="country" required />
+        <label>Country</label>
+      </div>
+
+      <div class="form-group">
+        <input type="text" name="state" required />
+        <label>State / Region</label>
+      </div>
+
+      <div class="form-group">
+        <input type="datetime-local" name="preferred_visit" required />
+        <label>Preferred Initial Visit Time and Date</label>
+      </div>
+
+      <div class="form-group">
+        <select name="payer_source" required>
+          <option value="" disabled selected>Select Payer Source</option>
+          <option value="Cash Pay">Cash Pay</option>
+          <option value="Insurance">Insurance</option>
+        </select>
+        <label>Payer Source</label>
+      </div>
+
+      <div class="form-group">
+        <input type="text" name="insurance_type" />
+        <label>Please list what kind of insurance</label>
+      </div>
+
+      <div class="form-group textarea-group">
+        <textarea name="additional_details" rows="4"></textarea>
+        <label>Additional Details(Diagnosis/Problems)</label>
+      </div>
+
+      <!-- Optional hidden fields -->
+      <input
+        type="hidden"
+        name="_subject"
+        value="New Appointment Request – YITH Geriatrics"
+      />
+      <input type="hidden" name="_template" value="table" />
+
+      <button type="submit" class="btn primary-btn form-btn">
+        Submit Appointment
+      </button>
+    </form>
+
+    <!-- ===== SUCCESS MODAL ===== -->
+    <div id="successModal" class="success-modal">
+      <div class="success-modal-content">
+        <button class="close-modal" id="closeSuccess">&times;</button>
+
+        <i class="bi bi-check-circle-fill success-icon"></i>
+
+        <h3>Appointment Request Sent</h3>
+        <p>
+          Thank you for contacting
+          <strong>YITH Geriatrics Rehab & Well-being Services</strong>. Our team
+          will review your request and reach out shortly to confirm your visit.
+        </p>
+
+        <button class="btn btn-primary close-btn">Close</button>
+      </div>
+    </div>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <p>Let’s walk this journey together.</p>
+
+        <ul class="contact-info">
+          <!-- <li><i class="bi bi-geo-alt"></i> [Clinic Address]</li> -->
+          <li><i class="bi bi-telephone"></i> +1 (405) 706 - 7304</li>
+          <li>
+            <i class="bi bi-envelope"></i> Admin@yithgerirehab.onmicrosoft.com
+          </li>
+          <li><i class="bi bi-globe"></i> yithgerirehab.com</li>
+        </ul>
+
+        <!-- <div class="social-icons">
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-twitter-x"></i></a>
+        </div> -->
+
+        <a href="#contact" class="btn btn-primary">Send Us a Message</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="footer-about">
+          <h3>YITH Geriatrics Rehab</h3>
+          <p>
+            Empowering healthy aging through compassionate rehabilitation,
+            wellness, and care for seniors.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Our Services</a></li>
+            <li><a href="#booking">Book an Appointment</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Contact Info</h4>
+          <ul>
+            <!-- <li>
+              <i class="bi bi-geo-alt"></i> 123 Wellness Street, Lagos, Nigeria
+            </li> -->
+            <li><i class="bi bi-telephone">+1 (405) 706 - 7304 </i></li>
+            <li>
+              <i class="bi bi-envelope"></i> Admin@yithgerirehab.onmicrosoft.com
+            </li>
+          </ul>
+          <!-- <div class="footer-social">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-twitter-x"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+          </div> -->
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          © 2025 YITH Geriatrics Rehab and Well-being Services. All Rights
+          Reserved.
+        </p>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/country-state-city@1.0.7/dist/country-state-city.min.js"></script>
+
+    <script src="main.js"></script>
+  </body>
+</html>
