@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book a Session | YITH</title>
+    <link rel="stylesheet" href="booking.css" />
+  </head>
+  <body>
+    <section class="booking-hero">
+      <div class="container">
+        <div class="logo logo-block">
+          <img
+            src="./images/5929309271503867727-removebg-preview.png"
+            alt="YITH Logo"
+            class="logo-img"
+          />
+        </div>
+        <h1>Book Your Session</h1>
+        <p>
+          Choose a service, tell us your needs, and confirm your appointment.
+          All in one place.
+        </p>
+        <a href="index.html">
+          <button class="btn btn-primary">Go back to Home</button></a
+        >
+      </div>
+    </section>
+
+    <section class="booking-wrapper">
+      <div class="container">
+        <!-- STEP INDICATOR -->
+        <div class="steps">
+          <span class="active">1</span>
+          <span>2</span>
+          <span>3</span>
+          <span>4</span>
+        </div>
+
+        <form
+          id="bookingForm"
+          class="booking-form"
+          action="https://formspree.io/f/xjgreejw"
+          method="POST"
+        >
+          <input
+            type="hidden"
+            name="_subject"
+            value="new YITH Booking Request"
+          />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_redirect" value="thank-you.html" />
+          <!-- STEP 1 -->
+          <div class="step active">
+            <h2>Step 1 — Choose Service</h2>
+
+            <div class="form-group">
+              <select name="service_type" required>
+                <option value="">Select Service Type</option>
+                <option>Home PT</option>
+                <option>Virtual PT</option>
+                <option>Home Safety Assessment</option>
+                <option>Workshop</option>
+              </select>
+              <label>Service Type</label>
+            </div>
+
+            <div class="form-group">
+              <input type="datetime-local" name="preferred_datetime" required />
+              <label>Preferred Date & Time</label>
+            </div>
+
+            <div class="form-group">
+              <input
+                type="text"
+                placeholder="Enter address if home visit"
+                name="location"
+              />
+              <label>Location</label>
+            </div>
+
+            <button type="button" class="btn next">Next</button>
+          </div>
+
+          <!-- STEP 2 -->
+          <div class="step">
+            <h2>Step 2 — Client Details</h2>
+
+            <div class="form-group">
+              <input type="text" name="full_name" required />
+              <label>Full Name</label>
+            </div>
+
+            <div class="form-group">
+              <input type="tel" name="phone" required />
+              <label>Phone Number (SMS capable)</label>
+            </div>
+
+            <div class="form-group">
+              <input type="email" name="email" required />
+              <label>Email Address</label>
+            </div>
+
+            <div class="form-group">
+              <input type="date" name="date_of_birth" required />
+              <label>Date of Birth</label>
+            </div>
+
+            <div class="form-group textarea-group">
+              <textarea rows="3" name="primary_concern"></textarea>
+              <label>Primary Concern / Reason for Visit</label>
+            </div>
+
+            <div class="form-group textarea-group">
+              <textarea rows="3" name="mobility_notes"></textarea>
+              <label>Mobility Notes / Home Hazards (Optional)</label>
+            </div>
+
+            <div class="buttons">
+              <button type="button" class="btn back">Back</button>
+              <button type="button" class="btn next">Next</button>
+            </div>
+          </div>
+
+          <!-- STEP 3 -->
+          <div class="step">
+            <h2>Step 3 — Payment & Preferences</h2>
+
+            <div class="form-group">
+              <select name="payment_method" required>
+                <option value="">Select Payment Method</option>
+                <option>Cash at Visit</option>
+                <option>Card (Secure)</option>
+                <option>Invoice</option>
+              </select>
+              <label>Payment Method</label>
+            </div>
+
+            <div class="checkbox-group">
+              <!-- <input type="checkbox" id="insurance" /> -->
+              <label for="insurance"> Insurance billing coming soon </label>
+            </div>
+
+            <div class="form-group">
+              <input type="text" name="clinician_preference" />
+              <label>Preferred Clinician Gender / Language (Optional)</label>
+            </div>
+
+            <div class="checkbox-group">
+              <input type="checkbox" name="consent" required />
+              <label>
+                I consent to receive appointment reminders and agree to YITH’s
+                privacy policy.
+              </label>
+            </div>
+
+            <div class="buttons">
+              <button type="button" class="btn back">Back</button>
+              <button type="button" class="btn next">Next</button>
+            </div>
+          </div>
+
+          <!-- STEP 4 -->
+          <div class="step">
+            <h2>Step 4 — Review & Confirm</h2>
+
+            <p class="policy">
+              Cancellations must be made at least 24 hours before the scheduled
+              appointment. Late cancellations may incur a fee.
+            </p>
+
+            <button type="submit" class="btn btn-success">
+              Confirm Booking
+            </button>
+          </div>
+        </form>
+
+        <!-- CONFIRMATION -->
+        <div class="confirmation">
+          <h2>✅ Booking Confirmed</h2>
+          <p>
+            Thank you! Your appointment has been successfully scheduled. You
+            will receive an email and SMS confirmation shortly.
+          </p>
+          <a href="index.html"> Go back home</a>
+        </div>
+      </div>
+    </section>
+
+    <script src="booking.js"></script>
+  </body>
+</html>
