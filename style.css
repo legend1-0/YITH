@@ -682,7 +682,8 @@ p {
 .accordion-content ul li {
   margin-bottom: 8px;
   line-height: 1.6;
-  color: #333;
+  color: #867c7c;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Open state */
@@ -1390,7 +1391,7 @@ p {
 }
 
 .footer-contact i {
-  color: var(--primary);
+  color: #e0f7ff;
   margin-right: 8px;
 }
 
